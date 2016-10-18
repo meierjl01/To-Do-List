@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+header a {
+  text-decoration: none;
+  float: right;
+  padding: .25em;
+  margin: 1em;
+  font-size: 2em;
+  color: red;
+  border: 1px solid black; }
+
+/*# sourceMappingURL=main.css.map */
