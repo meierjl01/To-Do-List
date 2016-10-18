@@ -1,0 +1,8 @@
+.gitignore
+styles/bourbon
+styles/neat
+styles/_baseline.scss
+styles/main.scss
+styles/_variables-mixins.scss
+styles/_header.scss
+styles/_body.scss
