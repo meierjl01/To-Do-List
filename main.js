@@ -3,7 +3,7 @@ var container = $('.container');
 //to show the list and the ability to delete or click on a particular task
 function renderList() {
     container.empty();
-    var ul = $('<ul class="to-do-list"></ul>');
+    var ul = $('<ul class="to-do-list">To Do:</ul>');
     var settings = {
         url: 'https://tiny-za-server.herokuapp.com/collections/to_do_list/',
         type: 'GET',
@@ -46,7 +46,7 @@ function saveItem(e, form) {
 
 function renderForm() {
     container.empty();
-    var form = $('<form>' + '<input class="task" type="text" placeholder="New Task">' + '<textarea class="notes" placeholder="Task Notes/Reminders"></textarea>' + '<input class="submit" type="submit" value="Add New Task">' + '</form>');
+    var form = $('<form>' + '<div class="task-div"><input class="task" type="text" placeholder="New Task"></div>' + '<div class="notes-div"><textarea class="notes" placeholder="Task Notes/Reminders"></textarea></div>' + '<div class="submit-div"><input class="submit" type="submit" value="Add New Task"></div>' + '</form>');
     form.find('.submit').on('click', function(e) {
         saveItem(e, form);
     });

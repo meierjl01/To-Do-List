@@ -4,13 +4,38 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-header a {
-  text-decoration: none;
-  float: right;
-  padding: .25em;
-  margin: 1em;
-  font-size: 2em;
-  color: red;
-  border: 1px solid black; }
+header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  header a {
+    text-decoration: none;
+    float: right;
+    padding: .25em;
+    margin: 1em;
+    font-size: 1.5em;
+    color: red;
+    border: 1px solid black; }
+
+.to-do-list {
+  font-size: 1.5em; }
+  .to-do-list a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    font-size: .75em; }
+
+.task-div {
+  padding: 1em; }
+
+.notes-div {
+  padding: 1em; }
+
+.submit-div {
+  margin: 1em; }
 
 /*# sourceMappingURL=main.css.map */

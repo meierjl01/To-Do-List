@@ -1,10 +1,11 @@
 header {
+  @include outer-container;
   a {
     text-decoration: none;
     float: right;
     padding: .25em;
     margin: 1em;
-    font-size: 2em;
+    font-size: 1.5em;
     color: red;
     border: 1px solid black;
   }
